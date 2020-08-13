@@ -1,0 +1,40 @@
+baseURL: "http://example.org/"
+languageCode: "en-us"
+title: "My New Hugo Site"
+theme: "v1"
+menu:
+  main:
+    - identifier: home
+      name: Home
+      title: home section
+      url: /
+      weight: 1
+    - identifier: blog
+      name: Blog 
+      title: blog 
+      url: /blog/
+      pre: 
+      weight: 2
+    - identifier: aboutMe
+      name: About Me
+      title: about me
+      url: /about-me/
+      weight: 3
+    - identifier: study
+      name: Study Duration
+      title: Study Duration
+      url: /study-duration/
+      parent: aboutMe
+      weight: 1
+    - identifier: work
+      name: Work Experience
+      title: Work Experience
+      url: /work-experience/
+      parent: aboutMe
+      weight: 2
+    - identifier: profile
+      name: Persional Profile
+      title: Persional Profile
+      url: /person-profile/
+      parent: aboutMe
+      weight: 3

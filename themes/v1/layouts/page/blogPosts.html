@@ -1,0 +1,374 @@
+{{define "main"}}
+<div class="blog-posts">
+  <div class="section section-header">
+    <div class="parallax parallax-header filter">
+      <div
+        class="bg-cover bg-cover-parallax"
+        style="
+            background-image: url('{{relURL `images/blog-posts/header-10.jpeg`}}');
+          "
+      ></div>
+      <div class="container container-header">
+        <div class="content title-area text-center text-white">
+          <h1>Creative blog</h1>
+          <p class="lead">
+            Find only the best stories from our famous writers.
+          </p>
+          <button type="button" class="btn btn-light text-secondary">
+            Discover Story
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="container">
+      <div class="card-columns">
+        <div class="card">
+          <a href="#">
+            <img
+              src="{{relURL `/images/blog-posts/header-3.jpeg`}}"
+              class="card-img-top"
+              alt="..."
+            />
+          </a>
+          <div class="card-body p-4 text-center">
+            <h6 class="card-date my-3">Jul 27</h6>
+            <a href="#" class="card-title text-dark font-weight-bolder">
+              <h4>How to Make the Perfect Statues</h4>
+            </a>
+            <span class="border-bottom line-divider"></span>
+            <h6 class="card-category">food & drink</h6>
+          </div>
+        </div>
+
+        <div class="card">
+          <a href="#">
+            <img
+              src="{{relURL `/images/blog-posts/header-6.jpeg`}}"
+              class="card-img-top"
+              alt="..."
+            />
+          </a>
+          <div class="card-body p-4 text-center">
+            <div class="card-date my-3">Jun 22</div>
+            <a href="#" class="card-title text-dark font-weight-bolder">
+              <h5 class="card-title text-dark">Card title</h5>
+            </a>
+            <span class="border-bottom line-divider"></span>
+            <h6 class="card-category">nature</h6>
+          </div>
+        </div>
+
+        <div class="card">
+          <a href="#">
+            <img
+              src="{{relURL `/images/blog-posts/header-4.jpeg`}}"
+              class="card-img-top"
+              alt="..."
+            />
+          </a>
+          <div class="card-body p-4 text-center">
+            <div class="card-date my-3">Jun 22</div>
+            <a href="#" class="card-title text-dark font-weight-bolder">
+              <h5 class="card-title text-dark">Card title</h5>
+            </a>
+
+            <span class="border-bottom line-divider"></span>
+            <h6 class="card-category">business & travel</h6>
+          </div>
+        </div>
+
+        <div class="card text-center">
+          <div class="card-body p-4 text-center">
+            <div class="my-3 icon-card">
+              <i class="fab fa-twitter"></i>
+            </div>
+            <a href="#" class="card-title text-dark font-weight-bolder">
+              <h5 class="card-title text-dark">
+                "Breathing in the Crisp Air of Lake Lucerne"
+              </h5>
+            </a>
+
+            <span class="border-bottom line-divider"></span>
+            <h6 class="card-category">social media</h6>
+          </div>
+        </div>
+
+        <div class="card">
+          <a href="#">
+            <img
+              src="{{relURL `/images/blog-posts/header-2.jpeg`}}"
+              class="card-img-top"
+              alt="..."
+            />
+          </a>
+          <div class="card-body p-4 text-center">
+            <div class="card-date my-3">Jun 22</div>
+            <a href="#" class="card-title text-dark font-weight-bolder">
+              <h5 class="card-title text-dark">Card title</h5>
+            </a>
+
+            <span class="border-bottom line-divider"></span>
+            <h6 class="card-category">images</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section section-card-blog">
+    <div class="container">
+      <div class="title-area text-center">
+        <h5 class="text-secondary">Don't miss our</h5>
+        <h2 class="my-3 px-2">
+          Most Recommended Stories
+        </h2>
+        <div class="separator text-danger">✻</div>
+      </div>
+      <div class="card-columns">
+        <a href="#">
+          <div class="card card-shadow mb-5">
+            <img
+              src="{{relURL `/images/blog-posts/header-7.jpeg`}}"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body text-center">
+              <div class="circle-black">
+                <div class="circle bg-dark text-light">
+                  <div class="wrapper-date">
+                    <span class="month">
+                      Apr
+                    </span>
+                    <span class="date">12</span>
+                  </div>
+                </div>
+              </div>
+              <h4 class="card-title my-4 text-dark">
+                We Are Here to Make Life Better
+              </h4>
+              <div class="card-category text-danger">Life tips & tricks</div>
+              <p class="card-text text-dark">
+                Royère doesn't make a Polar bear bed but the Polar bear couch is
+                my favorite piece of furniture we own The Pablo pop up was
+                almost a pop up of influence
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="card card-shadow mb-5">
+            <div class="card-body text-center">
+              <div class="circle-black">
+                <div class="circle bg-dark text-light">
+                  <div class="wrapper-date">
+                    <span class="month">
+                      Apr
+                    </span>
+                    <span class="date">12</span>
+                  </div>
+                </div>
+              </div>
+              <h4 class="card-title my-4 text-dark">
+                Don't Be Scared
+              </h4>
+              <div class="card-category text-info">Motivation</div>
+              <p class="card-text text-dark">
+                Nothing beats the slight tang and softness of a ciabatta. Here's
+                mmy recipe.Simply dip in some olive oil and balsamic vinegar.
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="card card-shadow mb-5">
+            <img
+              src="{{relURL `/images/blog-posts/header-8.jpeg`}}"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body text-center">
+              <div class="circle-black">
+                <div class="circle bg-dark text-light">
+                  <div class="wrapper-date">
+                    <span class="month">
+                      Apr
+                    </span>
+                    <span class="date">12</span>
+                  </div>
+                </div>
+              </div>
+              <h4 class="card-title my-4 text-dark">
+                Trending
+              </h4>
+              <div class="card-category text-danger">
+                Now There Is Only One Important Color...
+              </div>
+              <p class="card-text text-dark">
+                When it comes to choosing decorative pieces, you want to stick
+                to a maximum of three colors. Then it's all about placement.
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="card card-shadow mb-5">
+            <div class="card-body text-center">
+              <div class="circle-black">
+                <div class="circle bg-dark text-light">
+                  <div class="wrapper-date">
+                    <span class="month">
+                      Apr
+                    </span>
+                    <span class="date">12</span>
+                  </div>
+                </div>
+              </div>
+              <h4 class="card-title my-4 text-dark">
+                We No Longer Have to Be Scared of the Truth
+              </h4>
+              <div class="card-category text-info">Motivation</div>
+              <p class="card-text text-dark">
+                Nothing beats the slight tang and softness of a ciabatta. Here's
+                mmy recipe.Simply dip in some olive oil and balsamic vinegar.
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="card card-shadow mb-5">
+            <img
+              src="{{relURL `/images/blog-posts/header-1.jpeg`}}"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body text-center">
+              <div class="circle-black">
+                <div class="circle bg-dark text-light">
+                  <div class="wrapper-date">
+                    <span class="month">
+                      Apr
+                    </span>
+                    <span class="date">12</span>
+                  </div>
+                </div>
+              </div>
+              <h4 class="card-title my-4 text-dark">
+                Trending
+              </h4>
+              <div class="card-category text-danger">
+                Now There Is Only One Important Color...
+              </div>
+              <p class="card-text text-dark">
+                When it comes to choosing decorative pieces, you want to stick
+                to a maximum of three colors. Then it's all about placement.
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="container">
+      <div class="title-area text-center">
+        <h5 class="text-secondary">Checkout our Latest</h5>
+        <h2 class="my-3 px-2">
+          Blog Posts
+        </h2>
+        <div class="separator text-danger">✻</div>
+      </div>
+      <div class="card border-0 mb-5">
+        <div class="row">
+          <div class="col-sm-6">
+            <a href="">
+              <img
+                class="w-100 p-md-0 card-img-top"
+                src="{{relURL `/images/blog-posts/header-4.jpeg`}}"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="col-sm-5 offset-md-1">
+            <div class="card-body">
+              <h4 class="card-category text-info">Web Design</h4>
+              <a href="#" class="card-title text-dark">
+                <h2>One of the Best Articles of 2016 Is Here</h2>
+              </a>
+              <p class="card-text text-gray">
+                That dreams will actualize. Dreams will manifest. We still love
+                Kanye We will find freedom in truth as opposed to ridicule. All
+                respect prayers and love to Phife’s family Thank you for so much
+                inspiration...
+              </p>
+              <a class="btn btn-danger" href="#" role="button">READ MORE</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card border-0">
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="card-body">
+              <h4 class="card-category text-info">Lifestyle & Trends</h4>
+              <a href="#" class="card-title text-dark">
+                <h2>We Are Here to Make Life Better</h2>
+              </a>
+              <p class="card-text text-gray">
+                That dreams will actualize. Dreams will manifest. We still love
+                Kanye We will find freedom in truth as opposed to ridicule. All
+                respect prayers and love to Phife’s family Thank you for so much
+                inspiration...
+              </p>
+              <a class="btn btn-danger" href="#" role="button">READ MORE</a>
+            </div>
+          </div>
+          <div class="col-sm-6 offset-md-1">
+            <a href="">
+              <img
+                class="w-100 p-md-0 card-img-top"
+                src="{{relURL `/images/blog-posts/header-2.jpeg`}}"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="container">
+      <div class="title-area text-center py-5 mb-2">
+        <h2 class="my-3 px-2">
+          Subscribe to Newsletter
+        </h2>
+        <div class="separator text-danger">✻</div>
+        <p>
+          We are so blessed! All praises and blessings to the families of people
+          who never gave up on dreams I love you guys.
+        </p>
+      </div>
+      <form>
+        <div class="form-group column">
+          <div class="row">
+            <div class="col-sm-4 offset-sm-4">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="abc@gmail.com"
+              />
+            </div>
+            <div class="col-sm-12 text-center mt-3">
+              <button type="submit" class="btn btn-danger mb-2">
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+{{end}}

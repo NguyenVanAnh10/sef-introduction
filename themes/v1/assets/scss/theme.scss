@@ -1,3 +1,8 @@
+@import "breakpoints";
+@import "functions";
+@import "variables";
+@import "blog-post.scss";
+
 ::selection {
   background: #e78b90;
   color: #ffffff;
@@ -275,4 +280,15 @@ p {
     overflow-x: hidden;
     right: 230px;
   }
+}
+.card-columns {
+  @include media-breakpoint-up(sm) {
+    column-count: 2;
+  }
+  @include media-breakpoint-up(lg) {
+    column-count: 3;
+  }
+}
+.navbar{
+  padding: .5rem 3rem;
 }

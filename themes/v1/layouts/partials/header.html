@@ -3,7 +3,7 @@
   color-on-scroll="200"
 >
   <div class="container nav-header">
-    <a class="navbar-brand" href="#">Rice</a>
+    <a class="navbar-brand" href="/">Rice</a>
     <button
       class="navbar-toggler"
       type="button"
@@ -18,42 +18,38 @@
   <div class="collapse navbar-collapse justify-content-end show">
     <div class="navbar-container">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link py-4 px-4 py-lg-2" href="#"
-            >Home <span class="sr-only">(current)</span></a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link py-4 px-4 py-lg-2" href="#">Projects</a>
-        </li>
+        {{ $currentPage := . }} 
+        {{ range .Site.Menus.main }}
+         {{ if .HasChildren }}
         <li class="nav-item dropdown">
           <a
-            class="nav-link py-4 px-4 py-lg-2 dropdown-toggle"
-            href="#"
+            class="nav-link py-4 px-4 py-lg-2 dropdown-toggle {{ if eq $currentPage.URL .URL }}active{{ end }}"
+            href="{{.URL}}"
             id="navbarDropdown"
             role="button"
             data-toggle="dropdown"
             aria-haspopup="true"
             aria-expanded="false"
           >
-            About Me
+            {{.Name}}
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Study Duration</a>
-            <a class="dropdown-item" href="#">Work Experience</a>
+            {{ range $i, $e := .Children }} {{if eq $i  2 }}
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Persional Profile</a>
+            <a class="dropdown-item {{ if eq $currentPage.URL .URL }}active{{ end }}" href="{{.URL}}">{{.Name}}</a>
+            {{else}}
+            <a class="dropdown-item {{ if eq $currentPage.URL .URL }}active{{ end }}" href="{{.URL}}">{{.Name}}</a>
+          {{end}} {{end}}
           </div>
         </li>
-        <li class="nav-item">
-          <a
-            class="nav-link py-4 px-4 py-lg-2 disabled"
-            href="#"
-            tabindex="-1"
-            aria-disabled="true"
-            >More</a
+        {{else}}
+        <li class="nav-item {{ if eq $currentPage.URL .URL }}active{{ end }}">
+          <a class="nav-link py-4 px-4 py-lg-2" href="{{.URL}}"
+            >{{ .Name }} <span class="sr-only">(current)</span></a
           >
         </li>
+        
+        {{end}} {{end}}
       </ul>
     </div>
   </div>
